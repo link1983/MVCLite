@@ -88,6 +88,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Manage\Content\css\admin.css" />
+    <Content Include="Areas\Manage\Content\css\pintuer.css" />
+    <Content Include="Areas\Manage\Content\images\11.jpg" />
+    <Content Include="Areas\Manage\Content\images\bg.jpg" />
+    <Content Include="Areas\Manage\Content\images\passcode.jpg" />
+    <Content Include="Areas\Manage\Content\images\tmbg-white.png" />
+    <Content Include="Areas\Manage\Content\images\y.jpg" />
+    <Content Include="Areas\Manage\Content\js\jquery.js" />
+    <Content Include="Areas\Manage\Content\js\pintuer.js" />
     <Content Include="Content\AmazeUI\assets\css\admin.css" />
     <Content Include="Content\AmazeUI\assets\css\amazeui.css" />
     <Content Include="Content\AmazeUI\assets\css\amazeui.flat.css" />
@@ -109,6 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manage\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ManageBaseController.cs" />
+    <Compile Include="Areas\Manage\Controllers\SettingController.cs" />
+    <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -125,6 +138,8 @@
     <Content Include="Content\AmazeUI\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\AmazeUI\assets\fonts\FontAwesome.otf" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Manage\Views\web.config" />
+    <Content Include="Areas\Manage\Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -134,6 +149,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Manage\Models\" />
+    <Folder Include="Areas\Manage\Views\ManageBase\" />
+    <Folder Include="Areas\Manage\Views\Setting\" />
+    <Folder Include="Areas\Manage\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
