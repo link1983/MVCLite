@@ -1,0 +1,42 @@
+﻿create table Catalog(
+ID int primary key,
+Name varchar(50) not null,
+Intro varchar(400),
+Status INT,
+AddTime datetime,
+Modifytime datetime
+)
+
+create table Article(
+ID int primary key,
+Title varchar(150) not null,
+Content text not null,
+levelMax INT,
+CID int,
+AddTime datetime,
+Modifytime datetime,
+click int
+)
+
+create table User(
+ID int primary key,
+name varchar(50) not null,
+password varchar(50) not null,
+status INT,
+AddTime datetime,
+Modifytime datetime
+)
+
+create table Comment(
+ID int primary key,
+Content varchar(400) not null,
+userid int,
+PID int,
+username varchar(50) not null,
+AddTime datetime,
+status int,
+articleid int not null
+)
+
+
+

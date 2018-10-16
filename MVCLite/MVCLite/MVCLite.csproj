@@ -47,6 +47,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\材料\MVCLite\Lib\System.Data.SQLite.DLL</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -114,6 +117,7 @@
     <Content Include="Content\JS\jquery.min-2.1.1.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="文档\数据库创建.txt" />
     <Content Include="文档\说明.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -122,10 +126,23 @@
     <Compile Include="Areas\Manage\Controllers\ManageBaseController.cs" />
     <Compile Include="Areas\Manage\Controllers\SettingController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DAL\Article.cs" />
+    <Compile Include="DAL\Catalog.cs" />
+    <Compile Include="DAL\Comment.cs" />
+    <Compile Include="DAL\User.cs" />
+    <Compile Include="DBUtility\DbHelperSQLite.cs" />
+    <Compile Include="DBUtility\DESEncrypt.cs" />
+    <Compile Include="DBUtility\PubConstant.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Catalog.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +157,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Manage\Views\web.config" />
     <Content Include="Areas\Manage\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Manage\Views\Setting\Index.cshtml" />
+    <Content Include="App_Data\sqlite.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,12 +168,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Areas\Manage\Models\" />
-    <Folder Include="Areas\Manage\Views\ManageBase\" />
-    <Folder Include="Areas\Manage\Views\Setting\" />
-    <Folder Include="Areas\Manage\Views\Shared\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -16,7 +16,8 @@ namespace MVCLite
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces:new string[] { "MVCLite.Controllers" }//存在多个Home控制器时需要此参数
             );
         }
     }
