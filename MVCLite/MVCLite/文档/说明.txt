@@ -8,3 +8,6 @@
 8、建立表时，除了非空、主键约束外，其他外键之类建议在程序里控制，更加灵活点，否者以后管理起来不方便。
 9、使用动软生成器生成三层代码，10年前都喜欢把BLL、DAL等分成同一解决方案的不同项目，现在没有必要了。
 生成的DAL有个bug，getsingle（）使用了dbhelpersql，改成dbhelpersqlite。
+10、运行时，如果只是更改视图的html代码，那么不需要重启，刷新网页就可以看见更新。
+11、简单的JS可以直接内联写在html里，如按钮的跳转onclick="window.location.href='User/Register'"。
+12、通过复制Login视图，略作修改后作为Register视图。

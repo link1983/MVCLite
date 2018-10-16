@@ -13,5 +13,9 @@ namespace MVCLite.Controllers
         {
             return View();
         }
+        public ActionResult Register()
+        {
+            return View();
+        }
     }
 }
