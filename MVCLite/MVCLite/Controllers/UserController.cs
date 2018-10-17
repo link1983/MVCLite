@@ -17,5 +17,10 @@ namespace MVCLite.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Register(string name,string password)
+        {
+            return View();
+        }
     }
 }

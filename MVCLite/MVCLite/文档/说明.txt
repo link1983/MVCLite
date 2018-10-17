@@ -11,3 +11,5 @@
 10、运行时，如果只是更改视图的html代码，那么不需要重启，刷新网页就可以看见更新。
 11、简单的JS可以直接内联写在html里，如按钮的跳转onclick="window.location.href='User/Register'"。
 12、通过复制Login视图，略作修改后作为Register视图。
+13、MVC的表单验证采用的是JQuery的Validate插件。
+
