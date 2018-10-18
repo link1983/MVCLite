@@ -12,4 +12,5 @@
 11、简单的JS可以直接内联写在html里，如按钮的跳转onclick="window.location.href='User/Register'"。
 12、通过复制Login视图，略作修改后作为Register视图。
 13、MVC的表单验证采用的是JQuery的Validate插件。
+14、控制器中的action可以直接return Content("XXXXX"),而不返回视图，网页就会以存文本显示内容，可以利用这个做简单的提醒。
 
