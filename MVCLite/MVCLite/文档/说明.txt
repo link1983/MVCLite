@@ -13,4 +13,5 @@
 12、通过复制Login视图，略作修改后作为Register视图。
 13、MVC的表单验证采用的是JQuery的Validate插件。
 14、控制器中的action可以直接return Content("XXXXX"),而不返回视图，网页就会以存文本显示内容，可以利用这个做简单的提醒。
-
+15、<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">意思是：大屏幕占6份，中屏幕占8份。写多个才能响应不同大小屏幕。
+16、html元素中data-开头的属性，是自定义属性。前端框架一般用类名属性来应用CSS，用自定义属性来应用JS。因为data-XXX="xxx",可以带值，从而可以把参数传给JS。

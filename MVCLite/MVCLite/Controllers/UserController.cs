@@ -31,6 +31,7 @@ namespace MVCLite.Controllers
             }
 
             var model = new Models.User();
+            model.ID = dal.GetMaxId() + 1;
             model.name = name;
             model.password = password;
             model.Modifytime = DateTime.Now;
