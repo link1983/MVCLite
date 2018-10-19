@@ -177,12 +177,32 @@ namespace MVCLite.DAL
 				return null;
 			}
 		}
+        public MVCLite.Models.User GetModel(string name)
+        {
 
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select ID,name,password,status,AddTime,Modifytime from User ");
+            strSql.Append(" where name=@name ");
+            SQLiteParameter[] parameters = {
+                    new SQLiteParameter("@name", DbType.String,50)          };
+            parameters[0].Value = name;
 
-		/// <summary>
-		/// 得到一个对象实体
-		/// </summary>
-		public MVCLite.Models.User DataRowToModel(DataRow row)
+            MVCLite.Models.User model = new MVCLite.Models.User();
+            DataSet ds = DbHelperSQLite.Query(strSql.ToString(), parameters);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return DataRowToModel(ds.Tables[0].Rows[0]);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public MVCLite.Models.User DataRowToModel(DataRow row)
 		{
 			MVCLite.Models.User model=new MVCLite.Models.User();
 			if (row != null)

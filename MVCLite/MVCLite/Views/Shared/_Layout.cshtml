@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var loginUser = Session["login_user"] as MVCLite.Models.User;
+}
+
+<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -100,13 +104,22 @@
                     </div>
                     <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
                 </form>
+                @if (loginUser == null)
+                {
+                    <div class="am-topbar-right">
+                        <button class="am-btn am-btn-danger am-topbar-btn am-btn-sm" onclick="window.location.href='User/Register'">注册</button>
+                    </div>
+                    <div class="am-topbar-right">
+                        <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="window.location.href='User/Login'">登录</button>
+                    </div>
+                }
+                else
+                {
+                    <div class="am-topbar-right">
+                        <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="">欢迎：@loginUser.name</button>
+                    </div>
+                }
 
-                <div class="am-topbar-right">
-                    <button class="am-btn am-btn-danger am-topbar-btn am-btn-sm" onclick="window.location.href='User/Register'">注册</button>
-                </div>
-                <div class="am-topbar-right">
-                    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="window.location.href='User/Login'">登录</button>
-                </div>
             </div>
         </div>
     </header>
