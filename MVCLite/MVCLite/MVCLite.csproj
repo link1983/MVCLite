@@ -126,6 +126,7 @@
     <Compile Include="Areas\Manage\Controllers\ManageBaseController.cs" />
     <Compile Include="Areas\Manage\Controllers\SettingController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -163,6 +164,7 @@
     <Content Include="App_Data\sqlite.db" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
