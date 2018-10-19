@@ -18,4 +18,6 @@
 17、登录查询时，改造User的dal，使它支持通过用户名来查询model，默认只有通过id来查询model。并使用参数化查询，避免sql注入攻击。
 18、前台登录使用Session，后台使用票据。Session["Login_user"]可以直接保存对象，不仅仅是字符串。
 19、var loginUser = Session["login_user"] as MVCLite.Models.User使用as来强制类型转换比较现代和高效，因为它只有确认可以转换时才转换，并且可以为null，是安全的。
-20、MVC框架自带表单验证，每个继承自Controller的类都有ModelState成员，用来记录表单验证信息，前台@Html.ValidationSummary()可以输出这些信息。（有待深入研究该知识点）
+20、MVC框架自带表单验证，每个继承自Controller的类都有ModelState成员，用来记录表单验证信息，前台@Html.ValidationSummary()可以输出这些信息。（有待深入研究）
+21、ASP.NET框架提供表单认证来管理访问权限，即某些控制器或页面需要通过登录某个表单之后才能访问。需要在web.config里进行配置登录页，在需要限制的控制器上添加特性标注（WebForm则是在web.config中配置访问路径），然后在Global.asax中添加票据代码。（有待深入研究）
+如果自己手写权限验证代码，那么需要在每个页面加入判断，而ASP.NET提供的表单认证，只要进行配置就可以了。

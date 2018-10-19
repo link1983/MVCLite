@@ -136,6 +136,7 @@
     <Compile Include="DBUtility\DbHelperSQLite.cs" />
     <Compile Include="DBUtility\DESEncrypt.cs" />
     <Compile Include="DBUtility\PubConstant.cs" />
+    <Compile Include="DBUtility\TicketTool.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
