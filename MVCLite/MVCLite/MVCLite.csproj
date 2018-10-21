@@ -115,8 +115,11 @@
     <Content Include="Content\AmazeUI\assets\js\app.js" />
     <Content Include="Content\AmazeUI\assets\js\handlebars.min.js" />
     <Content Include="Content\JS\jquery.min-2.1.1.js" />
+    <Content Include="Content\JS\jquery.validate.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="文档\数据库创建.txt" />
     <Content Include="文档\说明.txt" />
   </ItemGroup>
@@ -126,6 +129,7 @@
     <Compile Include="Areas\Manage\Controllers\ManageBaseController.cs" />
     <Compile Include="Areas\Manage\Controllers\SettingController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Areas\Manage\ViewModels\Config.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -172,9 +176,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\Manage\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
