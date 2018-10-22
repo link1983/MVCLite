@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;  
 using System.Text;
-namespace MVCLite.DBUtility
+namespace MVCLite.Utility
 {
 	/// <summary>
 	/// DES加密/解密类。

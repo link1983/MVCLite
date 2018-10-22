@@ -22,7 +22,7 @@ namespace MVCLite.Controllers
             }
             else
             {
-                DBUtility.TicketTool.SetCookie(name, "manager");
+                Utility.TicketTool.SetCookie(name, "manager");
                 return Redirect("/manage/home/index");
             }
         }

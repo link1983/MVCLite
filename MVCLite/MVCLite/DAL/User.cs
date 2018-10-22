@@ -2,7 +2,7 @@
 using System.Data;
 using System.Text;
 using System.Data.SQLite;
-using MVCLite.DBUtility;//Please add references
+using MVCLite.Utility;//Please add references
 namespace MVCLite.DAL
 {
 	/// <summary>

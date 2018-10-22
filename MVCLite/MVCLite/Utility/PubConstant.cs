@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Configuration;
-namespace MVCLite.DBUtility
+namespace MVCLite.Utility
 {
     
     public class PubConstant
