@@ -13,13 +13,17 @@ namespace MVCLite.Areas.Manage.Controllers
         // GET: Manage/Setting
         public ActionResult Index()
         {
-            return View();
+            string xml = System.IO.File.ReadAllText(Request.PhysicalApplicationPath+"\\config\\websetting.config");
+            var info = XmlUtil.Deserialize(typeof(Config), xml);
+            return View(info);
         }
         [HttpPost]
         public ActionResult Index(Config info)
         {
             string xml = XmlUtil.Serializer(typeof(Config), info);
-            return View();
+            System.IO.File.WriteAllText(Request.PhysicalApplicationPath+"\\config\\websetting.config",xml);
+
+            return Redirect("/manage/setting/index");
         }
     }
 }
