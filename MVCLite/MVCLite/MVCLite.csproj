@@ -125,11 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manage\Controllers\ArticleController.cs" />
     <Compile Include="Areas\Manage\Controllers\CatalogController.cs" />
     <Compile Include="Areas\Manage\Controllers\HomeController.cs" />
     <Compile Include="Areas\Manage\Controllers\ManageBaseController.cs" />
     <Compile Include="Areas\Manage\Controllers\SettingController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Areas\Manage\ViewModels\ArticleAdd.cs" />
     <Compile Include="Areas\Manage\ViewModels\CatalogAdd.cs" />
     <Compile Include="Areas\Manage\ViewModels\Config.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -174,6 +176,8 @@
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Areas\Manage\Views\Catalog\Index.cshtml" />
     <Content Include="Areas\Manage\Views\Catalog\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Article\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Article\Add.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
