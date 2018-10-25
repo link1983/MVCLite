@@ -29,7 +29,7 @@ namespace MVCLite.Areas.Manage.Controllers
             if(ModelState.IsValid)
             {
                 var model = new Models.Catalog();
-                model.ID = dal.GetMaxId()+1;
+                model.ID = dal.GetMaxId();
                 model.AddTime = DateTime.Now;
                 model.Intro = "";
                 model.Modifytime = DateTime.Now;

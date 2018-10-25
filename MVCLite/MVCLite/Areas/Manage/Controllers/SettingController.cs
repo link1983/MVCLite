@@ -18,7 +18,7 @@ namespace MVCLite.Areas.Manage.Controllers
             return View(info);
         }
         [HttpPost]
-        public ActionResult Index(Config info)
+        public ActionResult Index(ViewModels.Config info)
         {
             string xml = XmlUtil.Serializer(typeof(Config), info);
             System.IO.File.WriteAllText(Request.PhysicalApplicationPath+"\\config\\websetting.config",xml);

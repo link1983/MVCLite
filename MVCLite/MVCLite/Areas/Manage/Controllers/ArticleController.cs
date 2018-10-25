@@ -17,7 +17,7 @@ namespace MVCLite.Areas.Manage.Controllers
             ViewBag.List = GetModelList("");
             return View();
         }
-        public ActionResult add()
+        public ActionResult Add()
         {
             return View();
         }
@@ -28,7 +28,7 @@ namespace MVCLite.Areas.Manage.Controllers
             if (ModelState.IsValid)
             {
                 var model = new Models.Article();
-                model.ID = dal.GetMaxId() + 1;
+                model.ID = dal.GetMaxId();
                 model.AddTime = DateTime.Now;
                 model.Content =info.Content;
                 model.Modifytime = DateTime.Now;
