@@ -23,6 +23,7 @@ namespace MVCLite.Areas.Manage.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)] //不对危险字符处理，否者ueditor会提示错误。
         public ActionResult Add(ViewModels.ArticleAdd info)
         {
             if (ModelState.IsValid)
