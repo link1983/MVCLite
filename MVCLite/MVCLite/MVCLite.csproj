@@ -425,6 +425,7 @@
     <Compile Include="DAL\Article.cs" />
     <Compile Include="DAL\Catalog.cs" />
     <Compile Include="DAL\Comment.cs" />
+    <Compile Include="DAL\Pagenation.cs" />
     <Compile Include="DAL\User.cs" />
     <Compile Include="Utility\DbHelperSQLite.cs" />
     <Compile Include="Utility\DESEncrypt.cs" />
