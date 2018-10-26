@@ -8,7 +8,7 @@
 {
     <article class="blog-main">
         <h3 class="am-article-title blog-title">
-            <a href="#">@list[i].Title</a>
+            <a href="/article/index/@list[i].ID">@list[i].Title</a>
         </h3>
         <h4 class="am-article-meta blog-meta">by <a href="">open</a> posted on 2014/06/17 under <a href="#">字体</a></h4>
 
@@ -21,7 +21,13 @@
 }
 
 
-    <ul class="am-pagination blog-pagination">
+    @*<ul class="am-pagination blog-pagination">
         <li class="am-pagination-prev"><a href="">&laquo; 上一页</a></li>
         <li class="am-pagination-next"><a href="">下一页 &raquo;</a></li>
-    </ul>
+    </ul>*@
+<ul class="am-pagination am-pagination-centered">
+    <li class="am-disabled"><a href="#">上一页</a></li>
+    <li class="am-active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">下一页</a></li>
+</ul>

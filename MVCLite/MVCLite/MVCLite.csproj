@@ -418,6 +418,7 @@
     <Compile Include="Content\Ueditor\net\App_Code\PathFormater.cs" />
     <Compile Include="Content\Ueditor\net\App_Code\UploadHandler.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -469,6 +470,7 @@
     <Content Include="Content\Ueditor\third-party\video-js\font\vjs.eot" />
     <Content Include="Content\Ueditor\third-party\video-js\font\vjs.ttf" />
     <Content Include="Content\Ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="Views\Article\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
