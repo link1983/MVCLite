@@ -47,9 +47,8 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Content\Ueditor\net\Bin\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.SQLite">
       <HintPath>..\..\材料\MVCLite\Lib\System.Data.SQLite.DLL</HintPath>
@@ -409,6 +408,7 @@
     <Compile Include="Areas\Manage\ViewModels\ArticleAdd.cs" />
     <Compile Include="Areas\Manage\ViewModels\CatalogAdd.cs" />
     <Compile Include="Areas\Manage\ViewModels\Config.cs" />
+    <Compile Include="BLL\ArticleBLL.cs" />
     <Compile Include="Content\Ueditor\net\App_Code\Config.cs" />
     <Compile Include="Content\Ueditor\net\App_Code\ConfigHandler.cs" />
     <Compile Include="Content\Ueditor\net\App_Code\CrawlerHandler.cs" />
@@ -425,10 +425,10 @@
     <Compile Include="DAL\Article.cs" />
     <Compile Include="DAL\Catalog.cs" />
     <Compile Include="DAL\Comment.cs" />
-    <Compile Include="DAL\Pagenation.cs" />
     <Compile Include="DAL\User.cs" />
     <Compile Include="Utility\DbHelperSQLite.cs" />
     <Compile Include="Utility\DESEncrypt.cs" />
+    <Compile Include="Utility\Pager.cs" />
     <Compile Include="Utility\PubConstant.cs" />
     <Compile Include="Utility\TicketTool.cs" />
     <Compile Include="Global.asax.cs">
